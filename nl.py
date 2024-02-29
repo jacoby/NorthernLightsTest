@@ -18,10 +18,9 @@ def write_file ( file, words ):
 def compare_wordlists( words1, words2 ):
     list1 = words1.splitlines()
     list2 = words2.splitlines()
-    list = list1 + list2
     onlyleft = []
     onlyright = []
-    for word in list:
+    for word in list1 + lis:
         if word in list1 and word not in list2:
             onlyleft.append(word)
         if word in list2 and word not in list1:

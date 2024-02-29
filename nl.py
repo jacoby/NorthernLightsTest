@@ -20,7 +20,7 @@ def compare_wordlists( words1, words2 ):
     list2 = words2.splitlines()
     onlyleft = []
     onlyright = []
-    for word in list1 + lis:
+    for word in list1 + list2:
         if word in list1 and word not in list2:
             onlyleft.append(word)
         if word in list2 and word not in list1:

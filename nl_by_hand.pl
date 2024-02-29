@@ -30,8 +30,6 @@ for my $entry (@list) {
         }
 }
 
-say scalar @first_only;
-say scalar @last_only;
 write_file( 'by_hand_first_only', \@first_only );
 write_file( 'by_hand_last_only',  \@last_only );
 
